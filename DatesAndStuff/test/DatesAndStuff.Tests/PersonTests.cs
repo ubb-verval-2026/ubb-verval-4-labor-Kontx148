@@ -52,7 +52,8 @@ public class PersonTests
         try { task.Wait(); } catch { }
 
         // Assert
-        Assert.IsTrue(task.IsFaulted);
+        //Assert.IsTrue(task.IsFaulted);
+        Assert.That(task.IsFaulted, Is.True);
     }
 
     [Test]
