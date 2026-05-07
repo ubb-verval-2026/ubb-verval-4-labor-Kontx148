@@ -24,7 +24,7 @@ namespace DatesAndStuff.Tests
             //fixture.Register<IPaymentService>(() => new TestPaymentService());
 
             double top = 20;
-            double bottom = -11;
+            double bottom = -10;
             fixture.Customize<double>(c => c.FromFactory(() => new Random().NextDouble() * (top - (bottom)) + bottom));
             return fixture;
         })
